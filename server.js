@@ -16,3 +16,6 @@ const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`Servidor do Guika rodando na porra da porta ${PORT}`);
 });
+app.get("/", (req, res) => {
+  res.send("🔥 API do Guika Sushi tá online nessa porra 🔥");
+});
